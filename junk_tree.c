@@ -21,7 +21,7 @@ int main(int argc,char *argv[]){
 		printf("%s\n\n",ff);
 		f1=fopen(f,"r");
 		n=0;
-		while(n!=1){
+		//while(n!=1){
 			if(linel!=0){
 				for(nn=0;nn<linel;nn++){
 					fgets(fff,2070,f1);
@@ -41,7 +41,7 @@ int main(int argc,char *argv[]){
 					}
 			}
 		
-		}	
+		//}	
 		fclose(f1);
 	}
 	return 0;
