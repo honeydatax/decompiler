@@ -18,7 +18,7 @@ int main(int argc,char *argv[]){
 		sprintf(f,"%s.jav",argv[1]);
 		sprintf(ff,"procyon \"%s\" > \"%s\"",argv[1],f);
 		printf("working..... %s\n\n",f);
-		printf("%s\n\n",ff);
+		system(ff);
 		f1=fopen(f,"r");
 		n=0;
 		//while(n!=1){
@@ -37,7 +37,7 @@ int main(int argc,char *argv[]){
 						if (s2!=NULL)s2[0]=0;
 						sprintf(ff,"procyon \"%s\" >> \"%s\"",s1,f);
 						printf("working... %s\n",s1);
-						printf("%s\n",ff);
+						system(ff);
 					}
 			}
 		
